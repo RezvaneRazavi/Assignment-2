@@ -1,11 +1,18 @@
 import random
+from time import sleep
+import colorama
+from colorama import Fore, Back, Style
 
 while True:
     num = random.randint(1, 6)
-    print('Number Tas:', num)
+    print(Fore.MAGENTA + 'Number Tas:', num)
     if num == 6:
         num = random.randint(1, 6)
-        print('Award user:', num)
-        break
+        print(Fore.GREEN + 'Award user:', num)
+        sleep(2)
+    
     else:
-        break
+        choice = input(Fore.YELLOW + 'try again? y/n= ')
+        if choice == 'n':
+            print('by!')
+            break
