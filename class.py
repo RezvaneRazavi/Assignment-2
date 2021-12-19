@@ -1,18 +1,21 @@
-x = int(input('Enter Number of class members: '))
+x = int(input('Enter number of class members: '))
 
-class_list=[]
-sum = 0
+class_List = []
+sum = 0 
 
-for i in range (x):
-    num = float(input('enter score: '))
-    class_list.append(num)
 
-    sum += num
+for i in range(x):
+    number = float(input('enter score= '))
+    class_List.append(number)
+
+    sum += number
+
 
 avg = sum / x
 
-class_list.sort()
-max = max(class_list)
-min = min(class_list)
 
-print(class_list, '\navg = ', avg, '\nmax= ', max, '\nmin= ', min)
+max = max(class_List)
+min = min(class_List)
+
+
+print('\n', class_List, '\navg= ', avg, '\nmax= ', max, '\nmin= ', min)
